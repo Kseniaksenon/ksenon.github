@@ -1,0 +1,121 @@
+/* Основной стиль для body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #89fffd, #ef32d9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+/* Контейнер для формы */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Стили самой формы */
+.contact-form {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Заголовок формы */
+.contact-form h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Общий стиль для input и textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 10px rgba(239, 50, 217, 0.7);
+    outline: none;
+    transform: scale(1.05);
+}
+
+/* Стили группы полей (для более удобного управления) */
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* Кнопка отправки */
+.submit-btn {
+    background: linear-gradient(135deg, #89fffd, #ef32d9);
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #ef32d9, #89fffd);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Вывод результата */
+#output {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/* Анимация для плавного появления текста */
+#output.shown {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

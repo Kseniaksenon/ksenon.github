@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lr 10-12</title>
+    <style>  
+    body {
+background-color: rgb(184, 253, 174);
+    }  
+    </style>
+    <script>
+        function showCurrentDay() {
+            var currentDate = new Date();
+            var currentDay = currentDate.getDate();
+            alert("Текущий день в месяце: " + currentDay);
+        }
+    </script>
+     <script src="10-12.js"></script>
+</head>
+<body>
+    <h3>Номер текущего дня</h3>
+    <button onclick="showCurrentDay()">Показать день</button>
+
+    <h3>Фамилия и имя</h3>
+    <script>
+        for (var i = 0; i < 8; i++) {
+            document.write("Леута Ксения <br>");
+        }
+    </script>
+
+    <h3>Массив</h3>
+    <script>
+        // Формирование массива из 15 целых элементов
+        var arr = [5, -3, 8, -2, 10, 46, 55, 7, 2, -11, 9, -5, 34, 0, -4];
+
+        // Нахождение суммы положительных четных элементов
+        var sum = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] > 0 && arr[i] % 2 === 0) {
+                sum += arr[i];
+            }
+        }
+
+        // Вывод исходного массива
+        document.write("Исходный массив: " + arr.join(", ") + "<br>");
+
+        // Сортировка массива по убыванию
+        arr.sort(function(a, b) {
+            return b - a;
+        });
+
+
+        // Вывод суммы положительных четных элементов
+        document.write("Сумма положительных четных элементов: " + sum + "<br>");
+
+        // Вывод измененного массива
+        document.write("Измененный массив (по убыванию): " + arr.join(", "));
+    </script>
+
+    <h3>Расчет по формуле</h3>
+    <body>
+        <label for="a">Введите значение a:</label>
+        <input type="number" id="a"><br><br>
+    
+        <label for="b">Введите значение b:</label>
+        <input type="number" id="b"><br><br>
+    
+        <label for="c">Введите значение c:</label>
+        <input type="number" id="c"><br><br>
+    
+        <label for="x">Введите значение x:</label>
+        <input type="number" id="x"><br><br>
+    
+        <button onclick="calculate()">Рассчитать</button>
+    
+        <p id="result"></p>
+    
+        <script src="10-12.js"></script>
+
+    <h3>Строки</h3>
+    <script>
+        // Создание строковых переменных
+        var s1 = "Ксения";
+        var s2 = "Я люблю волейбол";
+
+        // Определение длины строки s1
+        var lengthS1 = s1.length;
+        document.write("Длина строки s1: " + lengthS1 + "<br>");
+
+        // Вставка дополнительных пробелов между словами в строке s2
+        s2 = s2.split(" ").join(" ");
+        document.write("Строка s2 с дополнительными пробелами: " + s2 + "<br>");
+
+        // Замена слова "Ксения" на "Александр" в строке s1
+        s1 = s1.replace("Евгений", "Александр");
+        document.write("Строка s1 после замены: " + s1);
+    </script>
+
+
+</body>
+</html>

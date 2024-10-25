@@ -1,0 +1,70 @@
+body{
+    background-color: rgba(202, 206, 67, 0.832);
+    color: aliceblue;
+    font: 700 35px "Roboto", sans-serif;
+    min-height: 100vh;
+    min-width: 98%;
+    margin: 0px 1% 0px 1%;
+}
+
+.container {  display: grid;
+    height: 100vh;
+    background-color: blueviolet;
+    grid-template-columns: 1fr 0.5fr 3fr 1.2fr 0.5fr 2fr 0.5fr 1.2fr 3fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3.5fr 0.5fr 0.5fr 1fr;
+    gap: 1% 0px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "cont1 cont1 cont1 cont1 cont1 cont1 cont1 cont1 cont1 cont1 cont1"
+      "cont2 cont2 cont2 cont2 cont2 cont2 cont2 cont2 cont2 cont2 cont2"
+      ". cont3 cont3 . cont4 cont4 cont4 . cont5 cont5 ."
+      ". . cont6 cont6 . . . cont7 cont7 . ."
+      "cont8 cont8 cont8 cont8 cont8 cont8 . cont9 cont9 cont9 cont9"
+      "cont10 cont10 cont10 cont10 cont10 cont10 cont10 cont10 cont10 cont10 cont10"
+      "cont11 cont11 cont11 cont11 cont11 cont11 cont11 cont11 cont11 cont11 cont11";
+  }
+  
+  .cont1 { grid-area: cont1;
+    background-color: aqua;
+}
+  
+  .cont2 { grid-area: cont2;
+    background-color: aqua;
+}
+  
+  .cont3 { grid-area: cont3;
+    background-color: aqua;
+}
+  
+  .cont4 { grid-area: cont4;
+    background-color: aqua;
+}
+  
+  .cont5 { grid-area: cont5;
+    background-color: aqua;
+}
+  
+  .cont6 { grid-area: cont6;
+    background-color: aqua;
+}
+  
+  .cont7 { grid-area: cont7;
+    background-color: aqua;
+}
+  
+  .cont8 { grid-area: cont8;
+    background-color: aqua;
+}
+  
+  .cont9 { grid-area: cont9;
+    background-color: aqua;
+}
+  
+  .cont10 { grid-area: cont10;
+    background-color: aqua;
+}
+  
+  .cont11 { grid-area: cont11;
+    background-color: aqua;
+}
+  
